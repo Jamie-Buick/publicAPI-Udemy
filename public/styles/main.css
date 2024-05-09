@@ -1,97 +1,68 @@
-/* ------------ */
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
+
+body {
+  min-height: 100vh;
+  background: #212534;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   box-sizing: border-box;
 }
-html {
-  height: 100%;
-}
-/* ------------ */
-body {
-  font-family: monospace;
-  height: 100%;
-}
-h1 {
-  width: 100%;
-  margin-bottom: 40px;
-}
-/* ------------ */
-.container {
-  height: 100%;
-  width: 100%;
-  max-width: 570px;
-  margin: 0 auto;
-  padding: 60px;
 
+.container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  flex-direction: column; /* Arrange children in column direction */
+  height: 100%; /* Take full height of the viewport */
 }
-/* ------------ */
-.form {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 80px;
-  grid-column-gap: 10px;
+
+
+h1 {
+  color: white;
+  font-family: "Titan One", cursive;
+  margin-bottom: 40px;
+  font-weight: bolder;
 }
-.form-submit {
-  outline: none;
-  border: 1px solid rgb(232, 232, 232);
-  background-color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: monospace;
-  font-size: 14px;
-  line-height: 36px;
+
+h2 {
+  color: white;
+  font-family: "Titan One", cursive;
+  margin-bottom: 30px;
 }
-.form-submit:focus {
-  box-shadow: 0 0 0 0.5px rgb(153, 153, 153);
+
+.instructions p {
+  color: white;
+  font-family: "Titan One", cursive;
+  margin-bottom: 30px;
+  max-width: 500px; /* Adjust this value as needed */
+  overflow-wrap: break-word; /* Handles long words */
 }
-.cards {
-  display: flex;
-  margin: 20px 0;
-  width: 100%;
+
+li {
+  color: white;
+  font-family: "Titan One", cursive;
+  margin-bottom: 10px;
 }
-.card-item {
-  width: 100%;
-  padding: 5px 20px 20px;
-  border: 1px solid rgb(232, 232, 232);
-  background-color: white;
-  border-radius: 5px;
-}
-.card-info {
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
-}
-.card-activity {
-  line-height: 1.2;
-  margin-top: 10px;
-}
-.tag-error {
-  width: 100%;
+
+.custom-button {
+  background-color: purple !important; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
-/* ------------ */
-.is-element-hidden {
-  display: none;
+
+.custom-button:hover {
+  background-color: #45a049; /* Darker Green */
 }
-/* ------------ */
-@media (max-width: 620px) {
-  .container {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 60px 20px;
-  }
-  .form {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-  }
-}
+
+
+
+
